@@ -1,0 +1,365 @@
+.weather-head{
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  padding: 0;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+
+
+
+
+
+  
+}
+body{
+   
+  margin: 0;
+  padding: 0;
+  
+  
+  
+}
+.head-cityandtime{
+  font-size: 2rem;
+  display:  flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+
+}
+.head-timeanddate{
+   
+  font-size: 1.5rem ;
+  text-align: center;
+  padding-top: 15px;
+   
+}
+.date{
+  margin-bottom: 4px;
+  
+}
+.time{
+  font-size: 1.25rem;
+  margin-top: 0;
+  
+  
+}
+.head-celsius{
+  
+  font-size: 2rem;
+  display:  flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center;
+  
+
+
+}
+.celsius{
+  font-size: 5.5rem;
+
+}
+.forecast{
+  font-size: 2.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+   
+  
+   
+}
+.det-head{
+  font-size: 1.75rem;
+  padding-left: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  
+}
+.w-label{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
+  color: rgb(165, 163, 163);
+}
+.w-label1{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right:8%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  color: rgb(165, 163, 163);
+
+}
+.w-label1 p{
+  margin-bottom: 0.5rem;
+  margin-top:5px;
+}
+.w-label p{
+  margin-bottom: 0.5rem;
+  margin-top:5px;
+}
+.w-details{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 28px;
+  padding-right:34px;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+   
+  
+}
+.w-details p{
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.details-section{
+  max-width: 500px;
+  width: 100%;
+  margin-top: 0;
+ 
+  
+}
+.prediction-head{
+  color: black;
+  font-size: 1.75rem;
+  font-weight: bold;
+  
+
+ 
+}
+.weakly{
+  padding-right: 8px;
+}
+.predictions {
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center; /* Align items vertically */
+  font-size: 1.6em;
+  max-width: 500px;
+  width: 100%;
+  padding: 8px 16px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Ensure padding doesn't break layout */
+}
+
+.prediction-date {
+  flex: 1; /* Adjusts width dynamically */
+  text-align: left; /* Align text to the left */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.prediction-degree,
+.prediction-degree1 {
+  flex: 1; /* Adjusts width dynamically */
+  text-align: center; /* Center-align temperature */
+}
+
+.prediction-forecast {
+  flex: 1; /* Adjusts width dynamically */
+  text-align: right; /* Align text to the right */
+  overflow-wrap: break-word;
+  word-break: break-word; /* Ensure long words break properly */
+}
+
+/* Responsive Adjustments for Mobile */
+ 
+
+
+@media(min-width:500px) {
+  .weather-head{
+    margin-left: auto;
+    margin-right: auto;
+  
+    .predictions {
+      flex-direction: column; /* Stack items vertically */
+      font-size: 1.2em; /* Reduce font size for mobile */
+    }
+  
+    .prediction-date,
+    .prediction-degree,
+    .prediction-forecast {
+      flex: none; /* Remove dynamic flex resizing */
+      width: 100%; /* Make each item take full width */
+      text-align: left; /* Align all text to the left */
+      margin: 4px 0; /* Add spacing between items */
+    }
+  
+    .prediction-degree,
+    .prediction-degree1 {
+      margin-left: 0; /* Remove left margin for better alignment */
+      text-align: left; /* Align to the left for consistency */
+    }
+  
+    .prediction-forecast {
+      width: 100%; /* Ensure forecast text uses full width */
+      margin: 0; /* Remove unnecessary margins */
+    }
+  }
+  .details-section{
+   background-color: rgb(255, 255, 255);
+   margin-left: auto;
+   margin-right: auto;
+ 
+ 
+
+  }
+ 
+  body{
+    background-color: rgb(247, 245, 245);
+  }
+
+  
+  
+}
+.toggle-head-btn {
+  position: fixed;
+  top: 5px;
+  right: 17%;
+  padding: 5px 10px;
+  background: none;
+  color: #bfbdbd;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  transform: scaleX(2.5); /* Adjust this value to increase or decrease width */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+/* From Uiverse.io by zanina-yassine */ 
+.container {
+  width: 250px;
+  height: 250px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cloud {
+  width: 250px;
+}
+
+.front {
+  padding-top: 45px;
+  margin-left: 25px;
+  display: inline;
+  position: absolute;
+  z-index: 11;
+  animation: clouds 8s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.back {
+  margin-top: -30px;
+  margin-left: 150px;
+  z-index: 12;
+  animation: clouds 12s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.right-front {
+  width: 45px;
+  height: 45px;
+  border-radius: 50% 50% 50% 0%;
+  background-color: #4c9beb;
+  display: inline-block;
+  margin-left: -25px;
+  z-index: 5;
+}
+
+.left-front {
+  width: 65px;
+  height: 65px;
+  border-radius: 50% 50% 0% 50%;
+  background-color: #4c9beb;
+  display: inline-block;
+  z-index: 5;
+}
+
+.right-back {
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50% 50% 0%;
+  background-color: #4c9beb;
+  display: inline-block;
+  margin-left: -20px;
+  z-index: 5;
+}
+
+.left-back {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 0% 50%;
+  background-color: #4c9beb;
+  display: inline-block;
+  z-index: 5;
+}
+
+.sun {
+  width: 120px;
+  height: 120px;
+  background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+  background: linear-gradient(to right, #fcbb04, #fffc00);
+  border-radius: 60px;
+  display: inline;
+  position: absolute;
+}
+
+.sunshine {
+  animation: sunshines 2s infinite;
+}
+
+@keyframes sunshines {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(15px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(15px);
+  }
+}
+.alert{
+  display: flex;
+  position:absolute;
+  top:80%;
+  left: 50%;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: max-content;
+  transform: translate(-50%,-50%);
+
+}
+ 
+
