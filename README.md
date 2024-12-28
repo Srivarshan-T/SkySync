@@ -17,7 +17,7 @@ SkySync pulls weather data from a third-party API to display current conditions,
 ## Live Demo
 
 Check out the live version of **SkySync** hosted on Firebase:  
-**[SkySync Live Demo[(https://skysync-1.web.app/)]]**
+**[SkySync Live Demo](https://skysync-1.web.app/)**
 
 ## Installation Process
 
