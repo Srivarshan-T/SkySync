@@ -16,7 +16,7 @@ SkySync leverages modern web technologies to deliver accurate and timely weather
 ## Live Demo
 
 Check out the live version of SkySync hosted on Firebase:  
-**[SkySync Live](https://your-firebase-app.web.app)**
+**[SkySync Live](https://skysync-1.web.app/)**
 
 ## Repository Contents
 
